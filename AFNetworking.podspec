@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/AFNetworking/AFNetworking'
   s.social_media_url = 'https://twitter.com/AFNetworking'
   s.authors  = { 'Mattt Thompson' => 'm@mattt.me' }
-  s.source   = { :git => 'https://github.com/AFNetworking/AFNetworking.git', :tag => s.version, :submodules => true }
+  s.source   = { :git => 'https://github.com/muyunluan/AFNetworking.git', :tag => s.version, :submodules => true }
   s.requires_arc = true
   
   s.public_header_files = 'AFNetworking/AFNetworking.h'
@@ -68,12 +68,12 @@ EOS
     ss.public_header_files = 'AFNetworking/AF{URL,HTTP}SessionManager.h', 'AFNetworking/AFCompatibilityMacros.h'
   end
 
-  s.subspec 'UIKit' do |ss|
-    ss.ios.deployment_target = '8.0'
-    ss.tvos.deployment_target = '9.0'
-    ss.dependency 'AFNetworking/NSURLSession'
+#   s.subspec 'UIKit' do |ss|
+#     ss.ios.deployment_target = '8.0'
+#     ss.tvos.deployment_target = '9.0'
+#     ss.dependency 'AFNetworking/NSURLSession'
 
-    ss.public_header_files = 'UIKit+AFNetworking/*.h'
-    ss.source_files = 'UIKit+AFNetworking'
-  end
+#     ss.public_header_files = 'UIKit+AFNetworking/*.h'
+#     ss.source_files = 'UIKit+AFNetworking'
+#   end
 end
